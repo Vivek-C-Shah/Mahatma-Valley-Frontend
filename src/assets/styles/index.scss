@@ -1,0 +1,223 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+//ANTD OVERRIDE
+
+.ant-card {
+  margin: auto !important;
+}
+.ant-card-bordered {
+  border-radius: 10px !important;
+  width: 90%;
+  margin: 1rem !important;
+  // height: 500px;
+  img {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+}
+
+.ant-card-body {
+  height: 150px;
+}
+
+.ant-card-actions {
+  border-radius: 0 0 10px 10px;
+}
+
+.ant-divider-horizontal.ant-divider-with-text {
+  margin: 2.5rem 0 0 0 !important;
+  font-size: 1.4rem;
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+  line-height: 2 !important;
+  border-radius: 10px !important;
+}
+
+.no-radius {
+  .ant-input,
+  .ant-input-affix-wrapper {
+    line-height: 2 !important;
+    border-radius: 2px !important;
+  }
+}
+
+.ant-btn {
+  border-radius: 10px !important;
+  height: 40px !important;
+}
+
+.ant-tag {
+  margin: 0.5rem 0 !important;
+  font-size: 0.9rem !important;
+  border-radius: 5px !important;
+}
+
+//CUSTOM CLASSES
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding-bottom: 2.5rem;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: $DarkBlue;
+  color: white;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.loader-container {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.disabled {
+  background: white;
+  color: black;
+  border: none !important;
+  box-shadow: none !important;
+  font-weight: bold;
+  padding-left: 0 !important;
+  cursor: auto;
+  &:hover,
+  &:active {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.form-container {
+  width: 60%;
+  background-color: white;
+  color: black;
+  margin: 2rem auto;
+  padding: 1rem;
+  -webkit-box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.77);
+  box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid $LightestGray;
+  border-radius: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.unhoverable-menu-item {
+  color: white !important;
+  opacity: 1 !important;
+  &:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+}
+
+.form {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-wrapper-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buttons-wrapper-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.my-2-auto {
+  margin: 2rem auto;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.two-cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 2rem auto !important;
+}
+
+.center-panel {
+  background-color: white;
+  color: black;
+  margin: 2rem;
+  padding: 1rem;
+  -webkit-box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.77);
+  box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid $LightestGray;
+  border-radius: 10px;
+}
+
+.center-panel-small {
+  background-color: white;
+  color: black;
+  margin: 2rem auto;
+  padding: 1rem;
+  -webkit-box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.77);
+  box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid $LightestGray;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.left-panel {
+  width: 40vw;
+  background-color: white;
+  color: black;
+  margin: 2rem;
+  padding: 1rem;
+  -webkit-box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.77);
+  box-shadow: -2px 5px 14px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid $LightestGray;
+  border-radius: 10px;
+}
+.right-panel {
+  margin: 2rem;
+  padding: 2rem;
+  width: 37%;
+  float: right;
+}
+
+.full-width {
+  width: 100% !important;
+  padding: 0.5rem 0.3rem !important;
+  border-radius: 5px !important;
+}
